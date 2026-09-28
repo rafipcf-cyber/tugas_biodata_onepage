@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            background: #f2f4f1;
+            color: #252a25;
+            font-family: Arial, sans-serif;
+        }
+
+        .biodata {
+            width: min(100%, 720px);
+            margin: 24px auto;
+            padding: 32px;
+            background: #ffffff;
+            border: 1px solid #d8ded7;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin: 0 0 24px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .profil {
+            display: flex;
+            align-items: flex-start;
+            gap: 28px;
+        }
+
+        .img {
+            display: flex;
+            width: 150px;
+            min-width: 150px;
+            height: 190px;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #8b9789;
+            color: #687167;
+            text-align: center;
+        }
+
+        .detail {
+            flex: 1;
+        }
+
+        h2 {
+            margin: 0 0 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #d8ded7;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 0 0 13px;
+            line-height: 1.5;
+        }
+
+        .label {
+            display: inline-block;
+            width: 130px;
+            font-weight: bold;
+        }
+
+        .alamat {
+            margin-top: 26px;
+        }
+
+        @media (max-width: 520px) {
+            body {
+                padding: 12px;
+            }
+
+            .biodata {
+                margin: 12px auto;
+                padding: 22px;
+            }
+
+            .profil {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .detail {
+                width: 100%;
+            }
+
+            .label {
+                width: 110px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="biodata">
+        <h1>Biodata Diri</h1>
+
+        <div class="profil">
+            <img src="images/profilfoto.jpg" alt="Foto anomali" class="img">
+
+            <section class="detail" aria-labelledby="data-pribadi">
+                <h2 id="data-pribadi">Data Pribadi</h2>
+                <p><span class="label">Nama</span>: Muhammad Rafi Shidiq Arkan</p>
+                <p><span class="label">TTL</span>: Bandung, 31 Agustus 2007</p>
+                <p><span class="label">Jenis kelamin</span>: Pria</p>
+                <p><span class="label">Umur</span>: 19 Tahun</p>
+                <p><span class="label">Agama</span>: Islam</p>
+                <p><span class="label">Pendidikan</span>: Mahasiswa, ITENAS</p>
+            </section>
+        </div>
+
+        <section class="alamat" aria-labelledby="data-alamat">
+            <h2 id="data-alamat">Alamat</h2>
+            <p><span class="label">Dimana</span>: Taman Bunga Cilame</p>
+            <p><span class="label">Kecamatan</span>: Ngamprah</p>
+            <p><span class="label">Kabupaten</span>: Kabupaten Bandung Barat</p>
+            <p><span class="label">Provinsi</span>: Jawa Barat</p>
+        </section>
+    </main>
+</body>
+</html>
